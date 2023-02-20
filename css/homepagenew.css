@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+/* nav bars */
+nav{
+    display: flex;
+    background-color: #333;
+    justify-content: flex-end;   
+}
+/* nav bar links */
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+/* nav bar hover effect */
+nav a:hover{
+    color: #333;
+    background-color: gray;
+}
+/* container row */
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* for the side content */
+.side{
+    flex: 10%;
+    background-color: #333;
+    padding: 20px;
+    color: white;
+
+}
+/* main content aka slideshow and other pictures or magazine */
+.main{
+    flex: 60%;
+    padding: 20px;
+
+}
+.main h2{
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Poppins', sans-serif;
+
+}
+/* for the video on the side screen */
+.side video{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+/* left side img */
+.side img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    
+}
+/* bottom img, those three pictures */
+.bottomlogo img{
+    width: 20%;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+/* footer */
+.footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+/* footer list */
+.footer li{
+    display: inline-block;
+    margin: 10px;
+}
+/* footer lists style */
+.footer li, a{
+    color: white;
+    text-decoration: none;
+}
+/* footer ul poistion */
+.footer2 ul{
+    margin-bottom: -10px;
+    margin-top: -15px ;
+}
+.foote2 a, ul, li, p{
+    text-align: right;
+}
+/* responsive screen */
+@media screen and (max-width: 680px) {
+    nav{
+        flex-direction: column;   
+        text-align: center;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .foote2 a, ul, li, p{
+        text-align: center;
+    }
+    .side li, h2{
+        text-align: center;
+    }
+}
+/* imgs */
+img {
+    vertical-align: middle;
+  }
+  /* for the container position and alignment */
+.container {
+    position: relative;
+    text-align: center;
+  }
+  /* img size */
+.container img{
+    width: 20px;
+    height: auto;
+}
+/* slideshow */
+.mySlides {
+    display: none;
+  }
+  /* to show pointer effect  */
+.cursor {
+    cursor: pointer;
+  }
+  /* arrows left and right */
+.prev,
+.next {
+  cursor: pointer;
+  position: relative;
+  padding: 50px;
+  top: 40%;
+  width: auto;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* for arrows */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  /* act like a separrator, supposedly for information */
+.caption-container {
+    background-color: #222;
+    padding: 2px;
+    margin-top: 50px;
+  }
+  /* To prevent other content to float from the same direction as the specified content does */
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* column width and position */
+.column {
+    float: left;
+    width: 20%;
+  }
+  

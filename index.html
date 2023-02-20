@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enegmatic Horizon</title>
+    <link rel="icon" href="images/favicon1.png" type="image/icon type">
+    <link rel="stylesheet" href="css/homepagenew.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
+    
+<body>
+  <nav>
+    <a href="homepagenew.html">Home</a>
+    <a href="categories.html">Categories</a>
+    <a href="About.html">About Us</a>
+    <a href="signup.html">Sign Up</a>
+    <a href="Login.html">Login</a>
+</nav>
+    <!-- Div row to wrap -->
+    <div class="row">
+        <div class="side">
+          <!-- For the logo on the left side -->
+            <img src="images/sidelogo2.png" alt="logo2" style="margin-top:-20px; border-radius: 0;">
+           
+        
+            <!--Videos and picture for some kind of an ads  -->
+            <video src="media/The Philippines _ Cinematic video.mp4" autoplay controls loop muted style="margin-top: 25%;"></video>
+            <img src="images/adside2.jpg" alt="" style="margin-top: 15%; height: auto;">
+            <video src="media/Marvel Studios’ Guardians of the Galaxy Vol 3  New Trailer.mp4" style="margin-top: 50px;"
+            autoplay controls loop muted></video>
+     <!-- Main is specefically assigned for the main content -->
+     <!-- Slideshow -->
+        </div>
+        <div class="main">
+            <div class="container">
+              <div class="mySlides">
+                <div class="numbertext">1 / 5</div>
+                <img src="images/magazine1.jpg" style="width:50%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">2 / 5</div>
+                <img src="images/magazine2.jpg" style="width:50%">
+              </div>
+            
+              <div class="mySlides">
+                <div class="numbertext">3 / 5</div>
+                <img src="images/magazine3.jpg" style="width:50%">
+              </div>
+                
+              <div class="mySlides">
+                <div class="numbertext">4 / 5</div>
+                <img src="images/magazine4.jpg" style="width:50%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">5 / 5</div>
+                <img src="images/magazine6.jpg" style="width:50%">
+              </div>
+                
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+            
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+              <!--Connected album or gallery from the slideshow  -->
+              <div class="row2">
+                <div class="column">
+                  <img class="slide cursor" src="images/magazine1.jpg" style="width:100%;" onclick="currentSlide(1)">
+                </div>
+                <div class="column">
+                  <img class="slide cursor" src="images/magazine2.jpg" style="width:100%" onclick="currentSlide(2)">
+                </div>
+                <div class="column">
+                  <img class="slide cursor" src="images/magazine3.jpg" style="width:100%" onclick="currentSlide(3)">
+                </div>
+                <div class="column">
+                  <img class="slide cursor" src="images/magazine4.jpg" style="width:100%"onclick="currentSlide(4)">
+                </div>   
+                <div class="column">
+                  <img class="slide cursor" src="images/magazine6.jpg" style="width:100%" onclick="currentSlide(5)">
+                </div>
+              </div>
+            </div>
+            <!--Another ads for magazines  -->
+            <div class="bottomlogo" align="center">
+            <a href="#"><img src="images/adbottom1.jpg" alt=""></a>
+            <a href="#"><img src="images/adbottom4.jpg" alt=""></a>
+            <a href="#"><img src="images/adbottom3.jpg" alt=""></a>
+            </div>
+            
+        </div>
+       
+    </div>
+    <!-- footer -->
+        <div class="footer">
+          <div class="footer2">
+            <ul>
+              <li><a href="#"><p>Advertise</p></a></li>
+              <li><a href="#"><p>Terms of Service</p></a></li>
+              <li><a href="#"><p>Privacy Policy</p></a></li>
+              <li><a href="#"><p>Contact Us</p></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- script to make the slide show from the main content to work -->
+        <script src="js/homepagenew.js"> </script>
+
+</body>
+</html>

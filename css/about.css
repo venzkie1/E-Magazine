@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+}
+/* for nav bars to be displayed as flex and be justified by the lawyer */
+nav{
+    display: flex;
+    background-color: #333;
+    justify-content: flex-end;
+   
+}
+/* nav a tag style */
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+/* nav a hover effect */
+nav a:hover{
+    color: #333;
+    background-color: gray;
+}
+/* obv. for the logo size */
+.logo img{
+    width: 10%;
+    max-width: 50%;
+}
+/* title, the ABOUT US styling */
+.title{
+    font-size: 2em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+/* The line, the separator, the amazing spiderman */
+.separator{
+    width: auto;
+    height: 4px;
+    background-color: gray;
+    margin: 24px;
+
+}
+/* flexible sanaol, and be aligned to center */
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* content margin */
+.content{
+    margin: 20px;
+}
+/* main class padding */
+.main{
+    padding: 0% 20%;
+}
+/* Welcome message margin */
+.welcome-message{
+    margin-left: 20px;
+}
+/* Welcome message ordered list padding and line height, line height is how far the letters are from each other. Try it if you forgot again. */
+.welcome-message ol{
+    padding: 15px;
+    line-height: 35px;
+}
+/* for the icons at the footer */
+.icons a{
+    text-align: center;
+    bottom: 0;
+    margin: 5px 5px;
+    text-decoration: none;
+    color: black;
+}
+/* footer */
+.footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+/* for the footer list */
+.footer li{
+    display: inline-block;
+    margin: 10px;
+}
+/* footer list and a tag styling */
+.footer li, a{
+    color: white;
+    text-decoration: none;
+}
+/* footer unordered list margin */
+.footer2 ul{
+    margin-bottom: -10px;
+    margin-top: -15px ;
+}
+/* alignment for the footer text */
+.foote2 a, ul{
+    text-align: right;
+}
+/* responsiveness */
+@media screen and (max-width: 680px) {
+    nav{
+        flex-direction: column;   
+        text-align: center;
+    }
+    .foote2 a, ul, li, p{
+        text-align: center;
+    }
+}

@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); 
+/* imported font style */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* for img obv. */
+img{width: 100%}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+/* for nav bars */
+nav{
+    display: flex;
+    background-color: #333;
+    justify-content: flex-end;
+   
+}
+/* for a tag nav bar */
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+/* hover effect */
+nav a:hover{
+    color: #333;
+    background-color: gray;
+}
+/* footer style and alignment */
+.footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+/* footer list display */
+.footer li{
+    display: inline-block;
+    margin: 10px;
+}
+/* footer list and a tag style */
+.footer li, a{
+    color: white;
+    text-decoration: none;
+}
+/* footer margin */
+.footer2 ul{
+    margin-bottom: -10px;
+    margin-top: -15px ;
+}
+/* footer alignment */
+.foote2 a, ul, li{
+    text-align: right;
+}
+
+/* main container's size */
+.main-container{
+    width: 90vw;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+/* greater sign is a child combinator, I read it somewhere and it works. */
+.main-container > h2{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 32px;
+}
+/* same thing at the above code */
+.main-container > p{
+    font-weight: 300;
+    padding: 10px 0;
+    opacity: 0.7;
+    text-align: center;
+}
+/* title margin, those all, comics, etc. */
+.category-head{
+    margin: 30px 0;
+}
+/* title display and style */
+.category-head ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+/* Still the title, comics, entertainment, etc. style, display, etc. */
+/* transition is when you click, the color changed and how fast it would be */
+.category-title{
+    flex: 0 0 calc(16.6667% - 10px);
+    display: flex;
+    justify-content:center;
+    background: #a8a8a8;
+    padding: 12px;
+    color: #fff;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+/* hover effect */
+.category-title:hover{
+    opacity: 0.7;
+}
+/* padding */
+.category-title li{
+    padding: 0 10px;
+}
+
+/* Pagod na ako Lord */
+
+/* single post */
+/* grid and how many columns */
+.posts-main-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+/* box shadowing effect */
+.posts-main-container > div{
+    box-shadow: 0px 8px 22px -12px rgba(0, 0, 0, 0.64);
+}
+/* img position */
+.post-img{
+    position: relative;
+}
+/* position, size and color for the category name, those title at the top and inside of the image. */
+.category-name{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 2px;
+}
+/* Everything here is a background color for the category name */
+.comics .category-name{
+    background: #00a7ea;
+}
+.entertainment .category-name{
+    background: #f03250;
+}
+.fashion .category-name{
+    background: #f0544f;
+}
+.news .category-name{
+    background: #2c2a4a;
+}
+.travel .category-name{
+    background: #66a31b;
+}
+
+
+/* post content, refer to the html */
+.post-content{
+    padding: 25px;
+}
+/* for the background obv. I know I'm making this comments for myself but goddamn it's helpful and stressful hahah */
+.post-content-top{
+    background: #01363b;
+    color: #fff;
+    opacity: 0.8;
+    padding: 5px 0 5px 15px;
+}
+/* for the span padding */
+.post-content-top span{
+    padding-right: 20px;
+}
+/* icon canlendars padding */
+.post-content-top .fa-calendar{
+    padding-right: 5px;
+}
+/* for the heading e.g THE AMAZING SPIDERMAN */
+.post-content h2{
+    font-size: 22px;
+    padding: 12px 0;
+    font-weight: 400;
+}
+/* for the description */
+.post-content p{
+    opacity: 0.7;
+    font-size: 15px;
+    line-height: 1.8;
+}
+/* for the buttons, those read now or watch now */
+.read-btn{
+    border: none;
+    padding: 8px 15px;
+    display: block;
+    margin: 5px auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid #292929;
+    background: transparent;
+    margin-bottom: 40px;
+}
+/* read button hover effect */
+.read-btn:hover{
+    background: gray;
+    color: white;
+}
+
+
+
+/* for responsiveness */
+@media(max-width: 1170px){
+    .posts-main-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 768px){
+    .posts-main-container{
+        grid-template-columns: 1fr;
+    }
+    nav{
+        flex-direction: column;   
+        text-align: center;
+    }
+    .foote2 a, ul, li, p{
+        text-align: center;
+    }
+}
+
+/* for the active title, the all with background red */
+.active{
+    background: #f0544f;
+}
