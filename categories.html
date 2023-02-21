@@ -3,11 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Categories</title>
+        <title>Categories - Enegmatic Horizon</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="images/favicon1.png" type="image/icon type">
         <link rel="stylesheet" href="css/categories.css">
         <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     </head>
     <body>
         <!-- nav bars -->
@@ -16,7 +17,27 @@
             <a href="categories.html">Categories</a>
             <a href="About.html">About Us</a>
             <a href="signup.html">Sign Up</a>
-            <a href="login.html">Login</a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#samplemodal">Login</button>
+      <div class="modal" id="samplemodal">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title">Login</h5>
+                      <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" name="email" id="email" placeholder="e.g JohnnySins@123.com" required>
+                      <label for="pass">Password</label>
+                      <input type="password" class="form-control" name="pass" id="pass" placeholder="Enter Password" required>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal">Login</button>
+                  </div>
+              </div>
+          </div>
+      </div>
         </nav>
         <!-- container -->
         <div class = "main-container">
@@ -328,10 +349,10 @@
         <div class="footer">
             <div class="footer2">
               <ul>
-                <li><a href="#"><p>Advertise</p></a></li>
-                <li><a href="#"><p>Terms of Service</p></a></li>
-                <li><a href="privacy.html"><p>Privacy Policy</p></a></li>
-                <li><a href="#"><p>Contact Us</p></a></li>
+                <li><a href="developers.html" class="text-decoration-none text-white"><p>Developers</p></a></li>
+                <li><a href="terms.html" class="text-decoration-none text-white"><p>Terms of Use</p></a></li>
+                <li><a href="privacy.html" class="text-decoration-none text-white"><p>Privacy Policy</p></a></li>
+                <li><a href="contact.html" class="text-decoration-none text-white"><p>Contact Us</p></a></li>
               </ul>
             </div>
         </div>
@@ -339,5 +360,7 @@
 
         <!-- JS file -->
         <script src = "js/categories.js"></script>
+         <!-- bootstrap -->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body>
 </html>

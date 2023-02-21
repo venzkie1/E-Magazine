@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Privacy Policy</title>
+  <title>Privacy Policy - Enegmatic Horizon</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="images/favicon1.png" type="image/icon type">
@@ -65,7 +65,27 @@ ul a{
                 <a class="nav-item" href="categories.html">Categories</a>
                 <a class="nav-item" href="About.html">About Us</a>
                 <a class="nav-item" href="signup.html">Sign Up</a>
-                <a class="nav-item" href="login.html">Login</a>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#samplemodal">Login</button>
+      <div class="modal" id="samplemodal">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title">Login</h5>
+                      <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" name="email" id="email" placeholder="e.g JohnnySins@123.com" required>
+                      <label for="pass">Password</label>
+                      <input type="password" class="form-control" name="pass" id="pass" placeholder="Enter Password" required>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal">Login</button>
+                  </div>
+              </div>
+          </div>
+      </div>
             </ul>
         </nav>
 
@@ -122,10 +142,10 @@ ul a{
     <div class="footer">
         <div class="footer2">
           <ul>
-            <li><a href="#"><p>Advertise</p></a></li>
-            <li><a href="#"><p>Terms of Service</p></a></li>
+            <li><a href="developers.html"><p>Developers</p></a></li>
+            <li><a href="terms.html"><p>Terms of Use</p></a></li>
             <li><a href="privacy.html"><p>Privacy Policy</p></a></li>
-            <li><a href="#"><p>Contact Us</p></a></li>
+            <li><a href="contact.html"><p>Contact Us</p></a></li>
           </ul>
         </div>
     </div>
