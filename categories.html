@@ -18,27 +18,37 @@
             <a href="About.html">About Us</a>
             <a href="signup.html">Sign Up</a>
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#samplemodal">Login</button>
-      <div class="modal" id="samplemodal">
-          <div class="modal-dialog">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <h5 class="modal-title">Login</h5>
-                      <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
-                  </div>
-                  <div class="modal-body">
-                      <label for="email">Email</label>
-                      <input type="email" class="form-control" name="email" id="email" placeholder="e.g JohnnySins@123.com" required>
-                      <label for="pass">Password</label>
-                      <input type="password" class="form-control" name="pass" id="pass" placeholder="Enter Password" required>
-                  </div>
-                  <div class="modal-footer">
-                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
-                      <button type="button" class="btn btn-primary" data-bs-toggle="modal">Login</button>
+              <div class="modal" id="samplemodal" >
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title">Login</h5>
+                              <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                          </div>
+        
+                          <form action="#">
+                            <div class="modal-body">
+        
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" name="email" id="email" required placeholder="e.g JohnnySins@123.com" >
+        
+                                <label for="pass">Password</label>
+                                <input type="password" class="form-control" name="pass" id="pass" required placeholder="Enter Password" >
+        
+                                <input type="checkbox"></input>
+                                <label for="check">Remember me</label>
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary">Login</button>
+                            </div>
+                          </form>
+                      </div>
                   </div>
               </div>
-          </div>
-      </div>
-        </nav>
+            
+          </nav>
         <!-- container -->
         <div class = "main-container">
             <h2>CATEGORIES</h2>

@@ -92,7 +92,7 @@ nav a:hover{
     margin-bottom: -10px;
     margin-top: -15px ;
 }
-.foote2 a, ul, li, p{
+.footer2 a, ul, li, p{
     text-align: right;
 }
 /* responsive screen */
@@ -104,7 +104,7 @@ nav a:hover{
     .row{
         flex-direction: column;
     }
-    .foote2 a, ul, li, p{
+    .footer2 a, ul, li, p{
         text-align: center;
     }
     .side li, h2{
